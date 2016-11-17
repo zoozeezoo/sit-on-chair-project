@@ -1,0 +1,506 @@
+/*color turkus rgb 39 199 171
+szary rgb 228 228 228
+slider 204 204 204
+cennik 87 87 87
+ramka basic, ceny 194 194 194
+serwis 120 120 120
+gwarancja 147 147 147
+logo footer 155 155 155*/
+
+* {
+  box-sizing: border-box;
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+
+}
+
+/*.full-width { width: 100%; }*/
+html {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 1056px;
+  margin: 0 auto;
+  overflow: auto;
+  padding-bottom: 30px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+/*HEADER- - - - - - -
+  - - - - - - - - - -
+*/
+
+header {
+  color: #fff;
+  background-color: #000;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+p.logoHeader {
+
+  font-size: 1rem;
+  padding: .4em 0;
+  float: left;
+}
+
+header nav{
+  float: right;
+
+}
+
+.logoHeader span {
+  color: rgb(39, 199, 171);
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul > li {
+  display: inline-block;
+  margin-top: .4em;
+  /*position: relative;*/
+}
+
+header nav ul li a {
+  padding: .4em;
+}
+
+header nav ul ul {
+  display: none;
+  background-color: black;
+}
+
+/*header nav ul li:hover ul {
+position: absolute;
+display: block;
+}*/
+
+/*----- S L I D E R -----*/
+
+#slider {
+width: 100%;
+height: 505px;
+background: linear-gradient(to bottom, white, rgb(204, 204, 204));
+margin-bottom: 30px;
+}
+
+.box4blackChairLogoText{
+  margin-top: 80px;
+
+}
+
+#blackChair{
+  display: inline-block;
+  background-image: url("../images/black_chair.png");}
+
+.text1{
+  width: 422px;
+  /*display: inline-block;*/
+}
+
+div.text1 p.logo {
+  font-size: 40px;
+  /*font-weight: bold;*/
+  text-transform: uppercase;
+  /*font-stretch: extra-expanded; ?? nie działa*/
+  text-align: center;
+
+}
+
+div.text1 p.logo span {
+  font-weight: bold;
+  color: rgb(39, 199, 171);
+
+}
+
+div.text1 p.logoText {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 45px 0 38px 0;
+}
+
+div.text1 div.button1{
+  width: 264px;
+  height: 52px;
+  border-radius: 10px;
+  background-color: rgb(39, 199, 171);
+  text-align: center;
+  margin-left: 75px;
+}
+
+div.text1 a {
+  font-size: 24px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/*.arrows{}*/
+
+#gallery{
+  width: 100%;
+}
+
+.box{
+  border: 1px solid rgb(194, 194, 194);
+  width: 330px;
+  height: 226px;
+  display: inline-block;
+  margin-left: 13px;
+}
+
+.box1{
+  background-image: url("../images/box1_img.jpg");
+  padding-top: 140px;
+}
+
+.box2{
+  background-image: url("../images/box2_img.jpg");
+  padding-top: 140px;
+}
+
+.whiteTransparentBox {
+  width: 330px;
+  height: 62px;
+  background-color: rgba(247, 247, 247, 0.4);
+  padding-left: 20px;
+}
+
+.blueRectangular {
+  width: 150px;
+  height: 50px;
+  border-bottom-color: rgb(39, 199, 171);
+  border-bottom-width: 8px;
+  padding-top: 20px;
+}
+
+.margarita, .clair {
+  font-weight: bold;
+}
+
+.margarita span, .clair span {
+  text-transform: uppercase;
+}
+
+.box3 {
+  padding: 0px 20px 0px 20px;
+}
+
+.box3Title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: -15px;
+}
+
+/*.box3Text {
+  line-height: 1.4em;
+}*/
+
+/* C E NN I K */
+
+#price-list {
+  background-color: rgb(240, 240, 240);
+}
+
+.section-title {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.blueRectangular2 {
+  width: 300px;
+  height: 50px;
+  border-bottom-color: rgb(39, 199, 171);
+  border-bottom-width: 8px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  margin: 30px 0 0 13px;
+}
+
+.price-plan{
+  border: 1px solid rgb(194, 194, 194);
+  width: 330px;
+  height: 460px;
+  background-color: white;
+  display: inline-block;
+  margin-left: 13px;
+  position: relative;
+}
+
+.price-planStandard {
+  border: 1px solid rgb(39, 199, 171);
+  width: 330px;
+  height: 460px;
+  background-color: rgb(39, 199, 171);
+  display: inline-block;
+  margin-left: 13px;
+  position: relative;
+}
+
+.smallCircle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border-color: white;
+  border-width: 10px;
+  background-color: rgb(194, 194, 194);
+  box-shadow: 0px 0px 0px 2px rgb(194, 194, 194);
+  position: absolute;
+  left: 45%;
+  margin-top: -26px;
+}
+
+.smallCircleStandard {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border-color: white;
+  border-width: 10px;
+  background-color: rgb(39, 199, 171);
+  box-shadow: 0px 0px 0px 2px rgb(39, 199, 171);
+  position: absolute;
+  left: 45%;
+  margin-top: -26px;
+}
+
+.price-title {
+  font-size: 20px;
+  color: rgb(39, 199, 171);
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.price-titleStandard {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-color: rgb(194, 194, 194);
+  border-width: 2px;
+  margin-left: 115px;
+  margin-top: 20px;
+}
+
+.circle span {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(194, 194, 194);
+}
+.circle p {
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgb(194, 194, 194);
+}
+
+.circleStandard {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 115px;
+  margin-top: 20px;
+}
+
+.circleStandard span {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(39, 199, 171);
+  vertical-align: text-bottom;
+}
+
+.circleStandard p {
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgb(39, 199, 171);
+}
+
+.list ul {
+  list-style-type: none;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(194, 194, 194);
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.list ul li:nth-child(2n) {
+  background-color: rgb(245, 245, 245);
+}
+
+.list ul li:nth-child(2n+1) {
+  background-color: rgb(230, 230, 230);
+}
+
+.listStandard ul {
+ list-style-type: none;
+ margin-top: 20px;
+ text-align: center;
+ text-transform: uppercase;
+ color: rgb(194, 194, 194);
+ font-size: 20px;
+ line-height: 40px;
+}
+
+.listStandard ul li:nth-child(2n+1) {
+  background-color: white;
+}
+
+.button3 {
+  width: 180px;
+  height: 40px;
+  background-color: rgb(39, 199, 171);
+  border-radius: 10px;
+  text-align: center;
+  margin: 30px auto 30px 70px;
+}
+
+.button3 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.button3standard {
+  width: 180px;
+  height: 40px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin: 30px auto 30px 70px;
+}
+
+.button3standard a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(39, 199, 171);
+  font-size: 18px;
+  line-height: 40px;
+}
+
+/*div.basic, div.standard, div.advance{
+  width: 32%;
+  display: inline-block;
+}*/
+
+
+/* K O N T A K T */
+
+.contact {
+  float: left;
+  width: 60%;
+}
+
+label, textarea {
+  border-color: rgba(39, 199, 171, 0.5);
+  display: block;
+  margin: 20px;
+  font-size: 20px;
+}
+
+textarea {
+  resize: none;
+}
+
+.redChair {
+  float: right;
+  width: 40%;
+}
+
+.imgBox {
+  width: 250px;
+  height: 210px;
+  background-image: url("../images/red_chair.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.check {
+  font-size: 20px;
+  color: rgb(194, 194, 194);
+
+}
+
+.check input {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(39, 199, 171);
+  background: url("../images/form_ok.jpg");
+  cursor: pointer;
+  float: left;
+}
+
+.check p {
+  float: right;
+  margin-left: 10px;
+}
+
+button {
+  width: 340px;
+  height: 70px;
+  background-color: rgb(39, 199, 171);
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 34px;
+  line-height: 70px;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+}
+
+
+/* F OO T E R */
+#copyrights {
+  color: rgb(155, 155, 155);
+  float: left;
+  margin-top: 70px;
+  padding-top: 20px;
+}
+#logoFooter{
+  font-size: 20px;
+  color: rgb(155, 155, 155);
+  text-transform: uppercase;
+  float: right;
+  margin-left: 40px;
+  padding-top: 15px;
+
+}
+#logoFooter span{
+  font-weight: bold;
+}
+
+.socialMedia {
+  float: right;
+  margin: 70px 0 50px 0;
+}
