@@ -32,11 +32,13 @@
 
     <section id="slider">
         <article class="container">
-          <!-- <div class="left-arrow">&lt;</div> -->
-            <div class="box4blackChairLogoText">
+          <div class="arrows">
+            <div class="left-arrow">&lt;</div>
+            <div class="right-arrow">&gt;</div>
+          </div>
+            <div id="blackChair"></div>
 
-                <div id="blackChair"></div>
-
+            <div class="sliderBox">
                 <div class="text1">
                     <p class="logo">
                         sit <span>on</span> our <span>chair</span>
@@ -44,12 +46,14 @@
                     <p class="logoText">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                     </p>
-                    <div class="button1">
-                        <a href="#">zobacz więcej</a>
+                    <div class="button">
+                      <div class="button1">
+                          <a href="#">zobacz więcej</a>
+                      </div>
                     </div>
+
                 </div>
             </div>
-            <!-- <div class="right-arrow">&gt;</div> -->
         </article>
     </section>
 
@@ -75,8 +79,7 @@
             <div class="box box3">
                 <div class="blueRectangular box3Title">Finds all inputs</div>
                 <div class="box3Text">
-
-                    <br>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.
+                    Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.
                     Notice there is no change when clicking the checkboxes since no click events have been linked.
                 </div>
 
@@ -110,6 +113,8 @@
                         <ul>
                             <li>Zakup towaru + dowóz</li>
                             <li>Serwis</li>
+                            <li style="visibility: hidden">  u</li>
+                            <li style="visibility: hidden">  i</li>
                         </ul>
                     </div>
 
@@ -119,28 +124,29 @@
                 </div>
             </div>
 
-            <div class="price-planStandard">
-                <div class="smallCircleStandard"></div>
+            <div class="price-plan standardP">
+                <div class="smallCircle standardSC"></div>
 
-                <div class="price-boxStandard">
-                    <div class="price-titleStandard">
+                <div class="price-box standardB">
+                    <div class="price-title standardT">
                         standard plan
                     </div>
 
-                    <div class="circleStandard">
+                    <div class="circle standardC">
                         <p><span>95<sup>99</sup></span></p><br>
                         <p>pln/mies</p>
                     </div>
 
-                    <div class="listStandard">
+                    <div class="list standardL">
                         <ul>
                             <li>Zakup towaru + dowóz</li>
                             <li>Serwis</li>
                             <li>Gwarancja 5 lat</li>
+                            <li style="visibility: hidden">u</li>
                         </ul>
                     </div>
 
-                    <div class="button3standard">
+                    <div class="button3 standardBut">
                         <a href="#">dołącz</a>
                     </div>
                 </div>
@@ -185,25 +191,43 @@
                 </div>
             </div>
 
-            <form>
+            <div>
+
                 <div class="contact">
-                    <label><input type="text" placeholder="Imię"></label>
-                    <label><input type="email" placeholder="email"></label>
-                    <textarea cols=45 rows=7 placeholder="Wiadomość"></textarea>
+                    <div class="">
+                      <label><input type="text" placeholder="Imię"></label>
+                    </div>
+                    <div class="">
+                      <label><input type="email" placeholder="email"></label>
+                    </div>
+                    <div class="">
+                      <textarea cols=45 rows=9 placeholder="Wiadomość"></textarea>
+                    </div>
                 </div>
 
                 <div class="redChair">
                     <div class="imgBox"></div>
 
                     <div class="check">
-                      <input type="checkbox" value="">
-                      <p>Zgadzam się na przetwarzanie danych osobowych.</p>
+                      <input type="checkbox" id="ch1">
+                      <label for="ch1"><span></span>
+                        Zgadzam się na przetwarzanie danych osobowych.
+                      </label>
+
+                      <!-- <div class="input">
+                        <input type="checkbox">
+                      </div>
+                      <div class="agree">
+                        Zgadzam się na przetwarzanie danych osobowych.
+                      </div> -->
                     </div>
 
-                    <button type="submit" value="wyślij">wyślij</button>
-                </div>
 
-            </form>
+                    <div class="button">
+                      <button type="submit" value="wyślij">wyślij</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
