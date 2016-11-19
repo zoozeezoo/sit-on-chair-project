@@ -1,22 +1,12 @@
-/*color turkus rgb 39 199 171
-szary rgb 228 228 228
-slider 204 204 204
-cennik 87 87 87
-ramka basic, ceny 194 194 194
-serwis 120 120 120
-gwarancja 147 147 147
-logo footer 155 155 155*/
-
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   /*border-style: hidden;*/
   margin: 0;
   padding: 0;
 
 }
 
-/*.full-width { width: 100%; }*/
 html {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
@@ -47,16 +37,13 @@ header {
   letter-spacing: .1em;
 }
 
+/*-------L O G O-------*/
 p.logoHeader {
 
   font-size: 1rem;
   padding: .4em 0;
   float: left;
-}
-
-header nav{
-  float: right;
-
+  margin-top: 30px;
 }
 
 .logoHeader span {
@@ -64,14 +51,53 @@ header nav{
   font-weight: bold;
 }
 
-header nav ul {
-  list-style-type: none;
+/*--------N A V--------*/
+
+header nav{
+  float: right;
+  margin-top: 30px;
+  margin-right: 40px;
 }
 
-header nav ul > li {
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px, 40px, 10px, 10px;
+}
+
+nav ul li:hover {
+  background-color: rgb(39, 199, 171);
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.submenu a {
+  display: block;
+}
+
+.submenu a:hover {
+  background-color: rgb(39, 199, 171);
+}
+
+.show {
+  display: block;
+}
+
+/*header nav ul > li {
   display: inline-block;
   margin-top: .4em;
-  /*position: relative;*/
+  position: relative;
 }
 
 header nav ul li a {
@@ -83,15 +109,16 @@ header nav ul ul {
   background-color: black;
 }
 
-/*header nav ul li:hover ul {
+header nav ul li:hover ul {
 position: absolute;
-display: block;
-}*/
+display: block;*/
+}
 
 /*----- S L I D E R -----*/
 
 .arrows {
   width: 100%;
+  cursor: pointer;
 }
 
 .left-arrow, .right-arrow{
@@ -133,6 +160,34 @@ margin-bottom: 30px;
   background-size: contain;
   background-repeat: no-repeat;
   float: left;
+}
+
+#orangeChair {
+  height: 300px;
+  width: 450px;
+  margin-top: 80px;
+  background-image: url("../images/orange.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  display: none;
+}
+
+#redChair {
+  height: 300px;
+  width: 450px;
+  margin-top: 80px;
+  background-image: url("../images/red.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  display: none;
+}
+
+.showSlide {
+  display: block;
 }
 
 .text1{
@@ -215,9 +270,11 @@ div.text1 a {
 .blueRectangular {
   width: 150px;
   height: 50px;
+  border: 0px solid white;
   border-bottom-color: rgb(39, 199, 171);
   border-bottom-width: 8px;
   padding-top: 20px;
+
 }
 
 .margarita, .clair {
@@ -253,6 +310,7 @@ div.text1 a {
 .blueRectangular2 {
   width: 300px;
   height: 50px;
+  border: 0px solid white;
   border-bottom-color: rgb(39, 199, 171);
   border-bottom-width: 8px;
   padding-top: 20px;
@@ -278,6 +336,7 @@ div.text1 a {
 .smallCircle {
   width: 38px;
   height: 38px;
+  border: 0px solid white;
   border-radius: 50%;
   border-color: white;
   border-width: 10px;
@@ -308,6 +367,7 @@ div.text1 a {
 .circle {
   width: 100px;
   height: 100px;
+  border: 0px solid white;
   border-radius: 50%;
   border-color: rgb(194, 194, 194);
   border-width: 2px;
@@ -321,6 +381,7 @@ div.text1 a {
   font-weight: bold;
   color: rgb(194, 194, 194);
 }
+
 .circle p {
   text-align: center;
   font-size: 10px;
@@ -397,6 +458,10 @@ div.text1 a {
   width: 60%;
 }
 
+.form {
+  margin-bottom: 20px;
+}
+
 input, textarea {
   border-color: rgba(39, 199, 171, 0.5);
   display: block;
@@ -423,6 +488,7 @@ textarea {
   float: right;
   width: 40%;
   padding-right: 20px;
+  margin-top: -60px;
 }
 
 .imgBox {
@@ -464,23 +530,6 @@ label {
   color: rgb(194, 194, 194);
 }
 
-/*.agree {
-  font-size: 20px;
-  color: rgb(194, 194, 194);
-  float: right;
-}
-
-.input {
-  float: left;
-}
-
-.input input {
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgb(39, 199, 171);
-  background: url("../images/form_ok.jpg");
-  cursor: pointer;
-}*/
 
 button {
   width: 100%;
