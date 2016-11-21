@@ -41,9 +41,9 @@ header {
 p.logoHeader {
 
   font-size: 1rem;
-  padding: .4em 0;
+  padding: .4em;
   float: left;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .logoHeader span {
@@ -55,8 +55,7 @@ p.logoHeader {
 
 header nav{
   float: right;
-  margin-top: 30px;
-  margin-right: 40px;
+  margin-top: 20px;
 }
 
 nav ul {
@@ -67,7 +66,12 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  padding: 10px, 40px, 10px, 10px;
+  border-radius: 10px;
+}
+
+header nav ul li a {
+  padding: 1em 2em 1em 2em;
+  display: block;
 }
 
 nav ul li:hover {
@@ -77,14 +81,12 @@ nav ul li:hover {
 .submenu {
   display: none;
   position: absolute;
+  top: 120px;
   background-color: #000;
-  min-width: 160px;
+  min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.submenu a {
-  display: block;
-}
 
 .submenu a:hover {
   background-color: rgb(39, 199, 171);
@@ -94,25 +96,17 @@ nav ul li:hover {
   display: block;
 }
 
-/*header nav ul > li {
-  display: inline-block;
-  margin-top: .4em;
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid black;
   position: relative;
+  left: 42%;
+  top: -11px;
 }
 
-header nav ul li a {
-  padding: .4em;
-}
-
-header nav ul ul {
-  display: none;
-  background-color: black;
-}
-
-header nav ul li:hover ul {
-position: absolute;
-display: block;*/
-}
 
 /*----- S L I D E R -----*/
 
