@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
-    document.addEventListener('click', function(e) {
+    window.addEventListener('click', function(e) {
         if (!e.target.matches('.dropBtn')) {
 
             var submenuA = document.querySelectorAll('.submenu a')
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
         transparentBox[0].style.visibility = 'initial';
     });
     imgBox2.addEventListener('mouseout', function() {
-        transparentBox[1].style.visibility = 'visible';
+        transparentBox[1].style.visibility = 'unset'; //unset, initial, visible
     });
 
 });

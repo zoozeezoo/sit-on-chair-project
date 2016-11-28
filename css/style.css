@@ -571,4 +571,5 @@ button {
 .socialMedia {
   float: right;
   margin: 70px 0 50px 0;
+  cursor: pointer;
 }
